@@ -4,10 +4,10 @@ const state = {
 
 const mutations = {
     addMusic(state, song) {
-
+        state = song;
     },
     removeMusic(state, song) {
-
+        state = song;
     },
 };
 
