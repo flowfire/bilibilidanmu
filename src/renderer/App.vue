@@ -53,6 +53,9 @@ export default {
             message = message.replace(/8/g, '八');
             message = message.replace(/9/g, '九');
             window.speechSynthesis.speak(new SpeechSynthesisUtterance(`${name}说：${message}`));
+            if (message.startsWith('#吐痰 ')) {
+                this.$store.dispatch('');
+            }
         },
     },
     methods: {

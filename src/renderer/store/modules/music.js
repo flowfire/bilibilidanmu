@@ -1,13 +1,13 @@
 const state = {
-    main: 0,
+    music: [],
 };
 
 const mutations = {
-    DECREMENT_MAIN_COUNTER(state) {
-        state.main -= 1;
+    addMusic(state, song) {
+
     },
-    INCREMENT_MAIN_COUNTER(state) {
-        state.main += 1;
+    removeMusic(state, song) {
+
     },
 };
 
