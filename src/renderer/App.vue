@@ -42,16 +42,16 @@ export default {
                 window.speechSynthesis.speak(new SpeechSynthesisUtterance(`${name}${message}`));
                 return;
             }
-            message = message.replace('0', '零');
-            message = message.replace('1', '一');
-            message = message.replace('2', '二');
-            message = message.replace('3', '三');
-            message = message.replace('4', '四');
-            message = message.replace('5', '五');
-            message = message.replace('6', '六');
-            message = message.replace('7', '七');
-            message = message.replace('8', '八');
-            message = message.replace('9', '九');
+            message = message.replace(/0/g, '零');
+            message = message.replace(/1/g, '一');
+            message = message.replace(/2/g, '二');
+            message = message.replace(/3/g, '三');
+            message = message.replace(/4/g, '四');
+            message = message.replace(/5/g, '五');
+            message = message.replace(/6/g, '六');
+            message = message.replace(/7/g, '七');
+            message = message.replace(/8/g, '八');
+            message = message.replace(/9/g, '九');
             window.speechSynthesis.speak(new SpeechSynthesisUtterance(`${name}说：${message}`));
         },
     },
